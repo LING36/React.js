@@ -8,9 +8,9 @@ npm ERR!     C:\Users\qin\AppData\Roaming\npm-cache\_logs\2019-10-24T05_43_34_13
 则执行指令  
 npm config set registry http://registry.cnpmjs.org  
 后重新执行新建项目指令  
-
 3、npm start(浏览器运行项目)  
 
-
 ## todolist项目文件  
-react16.4快速上手-慕课网教学视频学习
+react16.4快速上手-慕课网教学视频学习  
+视频连接<http://www.imooc.com/learn/1023>  
+学习了新增列表项，删除列表项，组件嵌套，组件之间的通信  
