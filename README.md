@@ -10,6 +10,9 @@ npm config set registry http://registry.cnpmjs.org
 后重新执行新建项目指令  
 3、npm start(浏览器运行项目)  
 
+git commit提示Your branch is up-to-date with 'origin/master'.  
+解决链接<https://www.jianshu.com/p/e25c763b9816>
+
 ## todolist项目文件  
 react16.4快速上手-慕课网教学视频学习  
 视频连接<http://www.imooc.com/learn/1023>  
