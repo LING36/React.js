@@ -17,3 +17,10 @@ git commit提示Your branch is up-to-date with 'origin/master'.
 react16.4快速上手-慕课网教学视频学习  
 视频连接<http://www.imooc.com/learn/1023>  
 学习了新增列表项，删除列表项，组件嵌套，组件之间的通信  
+
+## component项目文件  
+React组件-慕课网教学视频学习  
+视频连接<https://www.imooc.com/video/16518>  
+学习了创建组件，调用组件，组件的样式设计  
+给组件元素添加类：className='letter'  
+页面数据绑定用单花括号：{  }  

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>组件</title>
+		<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	</head>
+	<body>
+		<div id="content"></div>
+		<script type="text/babel">
+			var destination = document.querySelector("#content");
+			
+			//react最新版本抛弃使用了createClass这个函数,createClass老版本使用
+			//var HelloWorld = React.createClass({
+			//	render:function(){
+			//		return(
+			//			<h1>Study component</h1>
+			//		)
+			//	}
+			//});
+			
+			//新版本使用ES6 Class的方法
+			class HelloWorld extends React.Component{
+				//render函数
+				render(){
+					return ( //返回组件的内容
+						<div>
+							<p>Hello,{this.props.greetTarget}</p>
+						</div>
+					);
+				}
+				
+			}
+		
+			
+			//调用dom函数
+			ReactDOM.render(
+				//jsx对象
+				//调用组件,组件可以多次调用
+				//greetTarget为参数
+				<div>
+					<HelloWorld greetTarget="123"/>
+					<HelloWorld greetTarget="456"/>
+					<HelloWorld/>
+				</div>
+				,
+				//挂载在dom节点
+				destination
+			);
+		</script>
+	</body>
+
+</html>

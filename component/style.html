@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>组件样式设计</title>
+		<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	</head>
+	
+	<!--组件样式设计-->
+	<style>
+		#content{
+			padding: 50px;
+			background-color: #fff;
+		}
+		
+		
+		div div div{
+			padding: 10px;
+			margin: 10px;
+			display: inline-block;
+			background-color: #ffde00;
+			color: #333;
+			font-family: monospace;
+			font-size: 32px;
+			text-align: center;
+		}
+		.letter{
+			color:#000;
+		}
+		.txt{
+			font-size: 40px;
+		}
+	</style>
+
+	<body>
+		<div id="content"></div>
+		<script type="text/babel">
+			var destination = document.querySelector("#content");
+			
+			//新版本使用ES6 Class的方法
+			class Letter extends React.Component{
+				//render函数
+				render(){
+					return ( //返回组件的内容
+					//添加letter类
+						<div className='letter txt'>
+							{this.props.children}
+						</div>
+					);
+				}
+				
+			}
+		
+			
+			//调用dom函数
+			ReactDOM.render(
+				//jsx对象
+				//调用组件
+				<div>
+					<Letter>T</Letter>
+					<Letter>Y</Letter>
+					<Letter>L</Letter>
+					<Letter>E</Letter>
+					<Letter>R</Letter>
+				</div>
+				,
+				//挂载在dom节点
+				destination
+			);
+		</script>
+	</body>
+
+</html>

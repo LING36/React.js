@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+	</head>
+	<script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	<style type="text/css">
+		#content {
+			padding: 50px;
+			background-color: #eee;
+		}
+		
+		#content h1 {
+			font-size: 144px;
+			font-family: sans-serif;
+			color: #0080a8;
+		}
+	</style>
+	<body>
+		<div id="content"></div>
+		<script type="text/babel">
+			var destination = document.querySelector("#content");
+			ReactDOM.render(
+				//jsx对象
+				<h1>Study component</h1>,
+				//挂载在dom节点
+				destination
+			)
+		</script>
+	</body>
+
+</html>
